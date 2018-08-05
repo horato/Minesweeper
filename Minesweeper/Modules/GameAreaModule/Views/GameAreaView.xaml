@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="Minesweeper.Modules.GameAreaModule.Views.GameAreaView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Minesweeper.Modules.GameAreaModule.Views"
+             xmlns:mvvm="http://prismlibrary.com/"
+             xmlns:components="clr-namespace:Minesweeper.Data.Components"
+             mvvm:ViewModelLocator.AutoWireViewModel="True">
+    <Grid>
+        <components:MinesweeperGridGenerator GameGrid="{Binding GameGrid}" />
+    </Grid>
+</UserControl>
